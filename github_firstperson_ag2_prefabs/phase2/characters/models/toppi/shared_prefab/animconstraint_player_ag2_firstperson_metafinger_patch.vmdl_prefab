@@ -1,0 +1,188 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc40:version{da0ab1f8-9722-4910-94b8-10b6a08c0934} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "AnimConstraintList"
+				children = 
+				[
+					{
+						_class = "Folder"
+						name = "constraints_metafinger_patch"
+						note = "The meta finger patch restricts the \"meta\" finger bones from moving the first finger bone to allow old viewmodel arms to be ported easier and without the need to re-weightpaint for it.  Disable this if you rigged the mesh to the meta fingers"
+						children = 
+						[
+							{
+								_class = "AnimConstraintPoint"
+								children = 
+								[
+									{
+										_class = "AnimConstraintBoneInput"
+										parent_bone = "hand_L"
+										relative_origin = [ 3.993074, -0.30075, -1.539351 ]
+										relative_angles = [ 2.777798, 19.130869, 10.529002 ]
+										weight = 0.5
+									},
+									{
+										_class = "AnimConstraintSlave"
+										parent_bone = "finger_index_0_L"
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										weight = 1.0
+									},
+								]
+							},
+							{
+								_class = "AnimConstraintPoint"
+								children = 
+								[
+									{
+										_class = "AnimConstraintBoneInput"
+										parent_bone = "hand_L"
+										relative_origin = [ 4.094984, -0.35166, -0.294535 ]
+										relative_angles = [ -0.830803, 17.64646, 2.179028 ]
+										weight = 0.5
+									},
+									{
+										_class = "AnimConstraintSlave"
+										parent_bone = "finger_middle_0_L"
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										weight = 1.0
+									},
+								]
+							},
+							{
+								_class = "AnimConstraintPoint"
+								children = 
+								[
+									{
+										_class = "AnimConstraintBoneInput"
+										parent_bone = "hand_L"
+										relative_origin = [ 3.797981, -0.101219, 0.713446 ]
+										relative_angles = [ -8.979131, 19.734921, -8.234076 ]
+										weight = 0.5
+									},
+									{
+										_class = "AnimConstraintSlave"
+										parent_bone = "finger_ring_0_L"
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										weight = 1.0
+									},
+								]
+							},
+							{
+								_class = "AnimConstraintPoint"
+								children = 
+								[
+									{
+										_class = "AnimConstraintBoneInput"
+										parent_bone = "hand_L"
+										relative_origin = [ 3.344835, 0.353908, 1.666154 ]
+										relative_angles = [ -13.827105, 17.308155, -26.697523 ]
+										weight = 0.8
+									},
+									{
+										_class = "AnimConstraintSlave"
+										parent_bone = "finger_pinky_0_L"
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										weight = 1.0
+									},
+								]
+							},
+							{
+								_class = "AnimConstraintPoint"
+								children = 
+								[
+									{
+										_class = "AnimConstraintBoneInput"
+										parent_bone = "hand_r"
+										relative_origin = [ -3.993074, 0.300748, 1.539353 ]
+										relative_angles = [ 2.777794, 19.130865, 10.529004 ]
+										weight = 0.5
+									},
+									{
+										_class = "AnimConstraintSlave"
+										parent_bone = "finger_index_0_r"
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										weight = 1.0
+									},
+								]
+							},
+							{
+								_class = "AnimConstraintPoint"
+								children = 
+								[
+									{
+										_class = "AnimConstraintBoneInput"
+										parent_bone = "hand_r"
+										relative_origin = [ -4.094984, 0.351658, 0.294537 ]
+										relative_angles = [ -0.830807, 17.646454, 2.179028 ]
+										weight = 0.5
+									},
+									{
+										_class = "AnimConstraintSlave"
+										parent_bone = "finger_middle_0_r"
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										weight = 1.0
+									},
+								]
+							},
+							{
+								_class = "AnimConstraintPoint"
+								children = 
+								[
+									{
+										_class = "AnimConstraintBoneInput"
+										parent_bone = "hand_r"
+										relative_origin = [ -3.797981, 0.101217, -0.713444 ]
+										relative_angles = [ -8.979133, 19.734915, -8.234078 ]
+										weight = 0.5
+									},
+									{
+										_class = "AnimConstraintSlave"
+										parent_bone = "finger_ring_0_r"
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										weight = 1.0
+									},
+								]
+							},
+							{
+								_class = "AnimConstraintPoint"
+								children = 
+								[
+									{
+										_class = "AnimConstraintBoneInput"
+										parent_bone = "hand_r"
+										relative_origin = [ -3.344835, -0.353909, -1.666152 ]
+										relative_angles = [ -13.827104, 17.308149, -26.697521 ]
+										weight = 0.8
+									},
+									{
+										_class = "AnimConstraintSlave"
+										parent_bone = "finger_pinky_0_r"
+										relative_origin = [ 0.0, 0.0, 0.0 ]
+										relative_angles = [ 0.0, 0.0, 0.0 ]
+										weight = 1.0
+									},
+								]
+							},
+						]
+					},
+				]
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		anim_graph_name = ""
+		document_sub_type = "ModelDocSubType_None"
+	}
+}
