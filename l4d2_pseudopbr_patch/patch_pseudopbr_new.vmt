@@ -1,0 +1,44 @@
+vertexlitgeneric
+{
+	// Base Textures
+	$basetexture				"vgui/white"
+	$bumpmap					"dev/flat_normal"
+	
+	// Phong Specular
+	$phong						1
+	$phongboost					4.5
+	$phongalbedotint			1
+	$phongfresnelranges			"[0.3 0.8 5]"
+	$phongexponenttexture		"models/characters/toppi/shared/exponent_pseudopbr"
+	$lightwarptexture			"models/characters/toppi/shared/warp_pseudopbr"
+	
+	// Environment Mapping
+	$envmap						env_cubemap
+	$envmaptint					"[.16 .16 .16]"
+	$envmapfresnel				0
+	$normalmapalphaenvmapmask	1
+	
+	// Misc Settings
+	$nodecal					1
+	
+	// IT (Boomer Bile) Detail Texture Support
+	$detail						"models\survivors\survivor_it.vtf"
+	$detailscale				3
+	$detailblendfactor			0
+	$detailblendmode			0
+	
+	$ITAmount					0
+	
+	Proxies
+	{
+		IT
+		{
+			resultVar			$ITAmount
+		}
+		Equals
+		{
+			srcVar1				$ITAmount
+			resultVar			$detailblendfactor
+		}
+	}
+}
